@@ -1,10 +1,11 @@
 const path= require('path');
 
 module.exports={
-    entry: './src/app.js',
+    mode: 'development',
+    entry: './src/test/app.js',
     output: {
-        path: path.join(__dirname,'public'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'public')
     },
 
     module: {
@@ -29,7 +30,7 @@ module.exports={
 
     devtool: 'cheap-module-eval-source-map',
     devServer: {
-        contentBase: path.join(__dirname,'public'),
+        contentBase: path.resolve(__dirname,'public'),
         historyApiFallback: true
     }
 }
