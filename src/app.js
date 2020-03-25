@@ -8,7 +8,8 @@ import SignUp from './components/SignUp'
 
 const jsx=(
     <div>
-        <SignUp/>
+        <NavigationBar />
+        <Carousel />
     </div>
     
 )
